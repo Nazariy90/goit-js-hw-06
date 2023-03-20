@@ -1,5 +1,3 @@
-// "use strict";
-
 const sumCategories = document.querySelectorAll(".item");
 console.log(`Number of categories: ${sumCategories.length}`);
 
