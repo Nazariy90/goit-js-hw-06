@@ -1,13 +1,10 @@
-const sumCategories = document.querySelectorAll(".item");
-console.log(`Number of categories: ${sumCategories.length}`);
+const itemEl = document.querySelectorAll(".item");
 
-const items = document.querySelectorAll(".item");
+console.log(`Number of categories: ${itemEl.length}`);
 
-Array.prototype.forEach.call(items, (element) => {
-  const title = element.querySelector("h2").innerHTML;
+const nameCategory = document.querySelectorAll("h2");
 
-  const itemsSum = element.querySelectorAll("li").length;
-
-  console.log(`Category: ${title}`);
-  console.log(`Elements: ${itemsSum}`);
+nameCategory.forEach((title) => {
+  console.log("Category:", title.textContent);
+  console.log("Elements:", title.nextElementSibling.children.length);
 });
