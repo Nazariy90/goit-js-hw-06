@@ -1,6 +1,7 @@
 const changeColorBTN = document.querySelector(".change-color");
 const colorValue = document.querySelector(".color");
 const bodyEl = document.body;
+const currentColor = bodyEl.style.backgroundColor;
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -9,8 +10,8 @@ function getRandomHexColor() {
 }
 
 function changeColorFoo() {
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  colorValue.textContent = bodyEl.style.backgroundColor;
+  currentColor = getRandomHexColor();
+  colorValue.textContent = currentColor;
 }
 
 changeColorBTN.addEventListener("click", changeColorFoo);

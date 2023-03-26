@@ -13,11 +13,10 @@ const handleClickDecrement = (event) => {
   valueCurrent.textContent = counterValue;
 };
 
-decrementButton.addEventListener("click", handleClickDecrement);
-
 const handleClickIncrement = (event) => {
   counterValue += 1;
   valueCurrent.textContent = counterValue;
 };
 
+decrementButton.addEventListener("click", handleClickDecrement);
 incrementButton.addEventListener("click", handleClickIncrement);

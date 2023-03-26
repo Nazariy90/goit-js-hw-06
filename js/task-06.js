@@ -3,9 +3,11 @@ const lengthEl = Number(inputEl.dataset.length);
 
 const counterFunc = () => {
   if (inputEl.value.length === lengthEl) {
-    inputEl.classList.add("valid").remove("invalid");
+    inputEl.classList.add("valid");
+    inputEl.classList.remove("invalid");
   } else {
-    inputEl.classList.add("invalid").remove("valid");
+    inputEl.classList.add("invalid");
+    inputEl.classList.remove("valid");
   }
 };
 
